@@ -1,0 +1,125 @@
+Order ID,Calculated Weight (KG),Courier Charged Weight (KG),Calculated Weight Slab (KG),Calculated Zone,Courier Charged Zone,Shipment Type,Expected Charge (Rs.),Actual Courier Charge (Rs.),Charge Difference (Rs.),Reconciliation Status,Overcharge Amount (Rs.),NN Predicted Expected Charge (Rs.)
+2001806232,1.302,1.3,1.5,d,d,Forward charges,135.0,135.0,0.0,Correctly Charged,0.0,142.87
+2001806273,0.615,1.0,1.0,d,d,Forward charges,90.2,90.2,0.0,Correctly Charged,0.0,78.85
+2001806408,2.265,2.5,2.5,d,d,Forward charges,224.6,224.6,0.0,Correctly Charged,0.0,255.15
+2001806458,0.7,1.0,1.0,b,b,Forward charges,61.3,61.3,0.0,Correctly Charged,0.0,62.13
+2001807012,0.24,0.15,0.5,d,d,Forward charges,45.4,45.4,0.0,Correctly Charged,0.0,34.23
+2001806686,0.24,0.15,0.5,d,d,Forward charges,45.4,45.4,0.0,Correctly Charged,0.0,34.23
+2001806885,0.42,1.0,0.5,b,b,Forward charges,33.0,61.3,28.3,Overcharged,28.3,25.65
+2001807058,1.168,1.15,1.5,b,b,Forward charges,89.6,89.6,0.0,Correctly Charged,0.0,91.53
+2001807186,0.5,0.5,0.5,d,d,Forward charges,45.4,45.4,0.0,Correctly Charged,0.0,35.69
+2001807290,0.5,0.5,0.5,d,d,Forward charges,45.4,45.4,0.0,Correctly Charged,0.0,35.69
+2001807814,0.607,0.79,1.0,b,b,Forward charges,61.3,61.3,0.0,Correctly Charged,0.0,60.87
+2001807931,0.607,0.72,1.0,d,d,Forward charges,90.2,90.2,0.0,Correctly Charged,0.0,78.62
+2001807956,1.08,1.08,1.5,b,b,Forward charges,89.6,89.6,0.0,Correctly Charged,0.0,90.97
+2001807960,0.9299999999999999,1.0,1.0,d,d,Forward charges,90.2,90.2,0.0,Correctly Charged,0.0,83.28
+2001807930,0.24,0.15,0.5,d,d,Forward charges,45.4,45.4,0.0,Correctly Charged,0.0,34.23
+2001808102,1.157,1.28,1.5,d,d,Forward charges,135.0,135.0,0.0,Correctly Charged,0.0,139.83
+2001808118,0.343,0.5,0.5,b,b,Forward charges,33.0,33.0,0.0,Correctly Charged,0.0,26.42
+2001808207,0.607,0.79,1.0,d,d,Forward charges,90.2,90.2,0.0,Correctly Charged,0.0,78.62
+2001808295,0.245,0.2,0.5,e,e,Forward and RTO charges,107.3,107.3,0.0,Correctly Charged,0.0,121.37
+2001808507,0.607,0.79,1.0,b,b,Forward charges,61.3,61.3,0.0,Correctly Charged,0.0,60.87
+2001808542,0.734,0.86,1.0,d,d,Forward charges,90.2,90.2,0.0,Correctly Charged,0.0,81.61
+2001808675,1.183,1.2,1.5,b,b,Forward charges,89.6,89.6,0.0,Correctly Charged,0.0,91.28
+2001807976,0.721,0.7,1.0,d,d,Forward and RTO charges,176.3,172.8,-3.5,Undercharged,0.0,180.28
+2001812838,0.558,0.6,1.0,b,b,Forward and RTO charges,110.1,102.3,-7.8,Undercharged,0.0,112.45
+2001816684,0.9199999999999999,0.99,1.0,d,d,Forward and RTO charges,176.3,172.8,-3.5,Undercharged,0.0,190.2
+2001817160,0.7,0.7,1.0,d,d,Forward and RTO charges,176.3,172.8,-3.5,Undercharged,0.0,179.05
+2001818390,0.841,0.8,1.0,e,e,Forward and RTO charges,218.3,213.5,-4.8,Undercharged,0.0,200.44
+2001821190,1.2,1.2,1.5,d,d,Forward and RTO charges,265.9,258.9,-7.0,Undercharged,0.0,260.49
+2001817093,1.357,1.3,1.5,b,b,Forward and RTO charges,166.7,151.1,-15.6,Undercharged,0.0,154.42
+2001823564,0.672,0.7,1.0,d,d,Forward and RTO charges,176.3,172.8,-3.5,Undercharged,0.0,177.4
+2001825261,1.557,1.6,2.0,d,d,Forward and RTO charges,355.5,345.0,-10.5,Undercharged,0.0,321.27
+2001811192,1.032,1.13,1.5,d,d,Forward and RTO charges,265.9,258.9,-7.0,Undercharged,0.0,252.88
+2001809917,0.63,0.6,1.0,d,d,Forward and RTO charges,176.3,172.8,-3.5,Undercharged,0.0,174.94
+2001806210,0.22,2.92,0.5,b,b,Forward charges,33.0,174.5,141.5,Overcharged,141.5,27.49
+2001806226,0.48,0.68,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.76
+2001806229,0.5,0.71,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806233,0.245,0.78,0.5,b,b,Forward charges,33.0,61.3,28.3,Overcharged,28.3,27.27
+2001806251,0.245,1.27,0.5,d,d,Forward charges,45.4,135.0,89.6,Overcharged,89.6,34.26
+2001806338,0.5,0.7,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806446,0.5,0.69,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806533,0.5,0.68,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806547,0.127,1.0,0.5,b,b,Forward charges,33.0,61.3,28.3,Overcharged,28.3,28.29
+2001806567,0.952,1.16,1.0,d,d,Forward charges,90.2,135.0,44.8,Overcharged,44.8,83.49
+2001806575,0.5,0.68,0.5,b,b,Forward charges,33.0,61.3,28.3,Overcharged,28.3,25.11
+2001806616,0.963,1.08,1.0,b,b,Forward charges,61.3,89.6,28.3,Overcharged,28.3,64.9
+2001806652,0.5,0.69,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806733,0.967,1.13,1.0,d,d,Forward charges,90.2,135.0,44.8,Overcharged,44.8,83.63
+2001806735,0.5,0.69,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806726,0.5,0.68,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001806776,0.611,2.86,1.0,b,b,Forward charges,61.3,174.5,113.2,Overcharged,113.2,60.91
+2001806801,0.361,1.35,0.5,b,b,Forward charges,33.0,89.6,56.6,Overcharged,56.6,26.26
+2001807004,0.5,0.68,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001807036,1.459,1.64,1.5,d,d,Forward charges,135.0,179.8,44.8,Overcharged,44.8,146.32
+2001807084,0.5,0.67,0.5,d,d,Forward charges,45.4,90.2,44.8,Overcharged,44.8,35.69
+2001807362,2.016,2.0,2.5,d,d,Forward charges,224.6,179.8,-44.8,Undercharged,0.0,253.41
+2001807415,1.048,1.0,1.5,b,b,Forward charges,89.6,61.3,-28.3,Undercharged,0.0,90.57
+2001809592,1.505,1.5,2.0,b,b,Forward charges,117.9,89.6,-28.3,Undercharged,0.0,124.03
+2001809794,1.517,1.5,2.0,d,d,Forward charges,179.8,135.0,-44.8,Undercharged,0.0,201.49
+2001809820,3.08,3.0,3.5,d,d,Forward charges,314.2,269.4,-44.8,Undercharged,0.0,340.14
+2001806471,1.621,1.7,2.0,b,d,Forward charges,117.9,179.8,61.9,Overcharged,61.9,123.07
+2001807241,0.607,0.79,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.87
+2001807981,0.5,0.5,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,25.11
+2001808286,0.601,0.77,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.8
+2001808801,0.731,0.8,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,62.59
+2001810104,0.601,0.76,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.8
+2001811153,0.607,0.76,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.87
+2001811229,0.505,0.6,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,59.79
+2001811363,0.343,0.59,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,26.42
+2001811466,0.607,0.8,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.87
+2001811809,0.5,0.5,0.5,b,d,Forward and RTO charges,53.5,86.7,33.2,Overcharged,33.2,63.51
+2001812854,2.572,2.94,3.0,b,d,Forward charges,174.5,269.4,94.9,Overcharged,94.9,199.21
+2001813009,0.72,1.0,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,62.43
+2001812650,0.5630000000000001,0.61,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.4
+2001814580,0.127,0.15,0.5,b,d,Forward and RTO charges,53.5,86.7,33.2,Overcharged,33.2,53.29
+2001815688,0.22,0.2,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,27.49
+2001816131,0.5539999999999999,0.7,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.31
+2001816996,0.5,0.5,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,25.11
+2001821185,2.098,2.1,2.5,b,d,Forward charges,146.2,224.6,78.4,Overcharged,78.4,162.37
+2001821284,0.177,0.2,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,27.87
+2001821679,0.165,0.2,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,27.98
+2001821742,0.24,0.15,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,27.32
+2001821750,0.755,0.8,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,62.95
+2001821766,0.24,0.2,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,27.32
+2001821995,0.477,0.5,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,25.15
+2001821502,0.558,0.6,1.0,b,d,Forward charges,61.3,90.2,28.9,Overcharged,28.9,60.35
+2001822466,1.376,1.1,1.5,b,d,Forward charges,89.6,135.0,45.4,Overcharged,45.4,89.18
+2001820690,0.065,0.15,0.5,b,d,Forward charges,33.0,45.4,12.4,Overcharged,12.4,28.97
+2001811604,0.721,0.8,1.0,e,b,Forward charges,112.1,61.3,-50.8,Undercharged,0.0,97.88
+2001819252,0.27,0.3,0.5,e,b,Forward charges,56.6,33.0,-23.6,Undercharged,0.0,49.43
+2001827036,1.676,1.6,2.0,e,b,Forward charges,223.1,117.9,-105.2,Undercharged,0.0,192.32
+2001806304,0.5,0.71,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001806768,0.84,1.02,1.0,b,d,Forward charges,61.3,135.0,73.7,Overcharged,73.7,64.12
+2001806823,0.127,0.59,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,28.29
+2001806828,0.5,0.69,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001806968,0.5,0.68,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001807328,0.49,2.28,0.5,b,d,Forward charges,33.0,224.6,191.6,Overcharged,191.6,25.13
+2001807785,0.5,0.68,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001807852,0.5,0.74,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001807970,0.765,4.13,1.0,b,d,Forward charges,61.3,403.8,342.5,Overcharged,342.5,63.1
+2001807329,0.5,0.73,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001807613,0.83,1.04,1.0,b,d,Forward charges,61.3,135.0,73.7,Overcharged,73.7,63.99
+2001808475,0.5,0.7,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001808585,0.5,0.72,0.5,e,b,Forward charges,56.6,61.3,4.7,Overcharged,4.7,51.25
+2001808679,0.5,0.72,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001808739,0.22,1.63,0.5,b,d,Forward charges,33.0,179.8,146.8,Overcharged,146.8,27.49
+2001808832,0.6,2.47,1.0,b,d,Forward charges,61.3,224.6,163.3,Overcharged,163.3,60.79
+2001808837,0.5,0.67,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001808883,0.5,0.72,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001808992,0.5,0.72,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001809270,0.5,0.68,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001809934,0.361,0.82,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,26.26
+2001810125,0.5,0.66,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001810281,0.5,0.68,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001810549,0.986,1.86,1.0,b,d,Forward charges,61.3,179.8,118.5,Overcharged,118.5,64.66
+2001810697,0.607,2.27,1.0,b,d,Forward charges,61.3,224.6,163.3,Overcharged,163.3,60.87
+2001811039,0.488,0.68,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.13
+2001811058,0.5,0.72,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001811306,0.9450000000000001,1.1,1.0,b,d,Forward charges,61.3,135.0,73.7,Overcharged,73.7,65.09
+2001812195,0.5,0.67,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001812941,0.5,0.73,0.5,b,d,Forward charges,33.0,90.2,57.2,Overcharged,57.2,25.11
+2001809383,0.607,0.5,1.0,b,d,Forward and RTO charges,110.1,86.7,-23.4,Undercharged,0.0,114.44
+2001820978,0.515,0.5,1.0,b,d,Forward charges,61.3,45.4,-15.9,Undercharged,0.0,59.94
+2001811475,0.689,0.5,1.0,e,b,Forward charges,112.1,33.0,-79.1,Undercharged,0.0,97.14
+2001811305,0.75,0.5,1.0,b,d,Forward charges,61.3,45.4,-15.9,Undercharged,0.0,62.88
