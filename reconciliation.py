@@ -5,6 +5,25 @@ import matplotlib.pyplot as plt
 def calculate_weight_slab(weight):
     return np.ceil(weight / 0.5) * 0.5
 
+def calculate_stats(series, name):
+    clean = series.dropna()
+    q1 = clean.quantile(0.25)
+    med = clean.median()
+    q3 = clean.quantile(0.75)
+    iqr = q3 - q1
+    return {
+        'Variable': name,
+        'Count': int(clean.count()),
+        'Mean': round(float(clean.mean()), 4),
+        'Std Dev': round(float(clean.std()), 4),
+        'Min': round(float(clean.min()), 4),
+        'Q1 (25%)': round(float(q1), 4),
+        'Median (50%)': round(float(med), 4),
+        'Q3 (75%)': round(float(q3), 4),
+        'IQR': round(float(iqr), 4),
+        'Max': round(float(clean.max()), 4)
+    }
+
 def main():
     file_path = 'BDM project.xlsx'
     
@@ -59,28 +78,25 @@ def main():
         rto_fixed = rates.get(f'rto_{zone}_fixed', 0)
         rto_add = rates.get(f'rto_{zone}_additional', 0)
         
-        charge = 0
-        
         additional_weight = max(0, weight_slab - 0.5)
         additional_slabs = additional_weight / 0.5
         
         if shipment_type == 'forward charges':
-            charge = fwd_fixed + (additional_slabs * fwd_add)
-        
+            return fwd_fixed + (additional_slabs * fwd_add)
         elif shipment_type == 'forward and rto charges':
-            charge = (
+            return (
                 fwd_fixed
                 + (additional_slabs * fwd_add)
                 + rto_fixed
                 + (additional_slabs * rto_add)
             )
-        
-        return charge
+        return 0
         
     reconciliation_df['Expected Charge (Rs.)'] = reconciliation_df.apply(calculate_expected_charge, axis=1)
     
     # 7. Reconciliation Differences
     reconciliation_df['Difference (Rs.)'] = reconciliation_df['Expected Charge (Rs.)'] - reconciliation_df['Billing Amount (Rs.)']
+    reconciliation_df['Weight Difference (kg)'] = reconciliation_df['Charged Weight'] - reconciliation_df['Total Weight (kg)']
     
     def determine_status(diff):
         if abs(diff) < 0.1: 
@@ -91,6 +107,9 @@ def main():
             return 'Undercharged'
             
     reconciliation_df['Charge Status'] = reconciliation_df['Difference (Rs.)'].apply(determine_status)
+    reconciliation_df['Overcharge Amount (Rs.)'] = reconciliation_df.apply(
+        lambda r: abs(r['Difference (Rs.)']) if r['Charge Status'] == 'Overcharged' else 0.0, axis=1
+    )
     
     # 8. Save final report
     print("Saving reconciliation report...")
@@ -107,7 +126,29 @@ def main():
     
     final_df.to_excel('Reconciliation_Report.xlsx', index=False)
     
-    # 9. Visualizations
+    # 9. Descriptive Statistics
+    print("\nComputing comprehensive descriptive statistics...")
+    stats_list = [
+        calculate_stats(order_df['Order Qty'], 'Order Quantity (Order Report)'),
+        calculate_stats(sku_df['Weight (g)'], 'Item Weight (g) (SKU Master)'),
+        calculate_stats(reconciliation_df['Total Weight (kg)'], 'Total Weight (kg) [Actual]'),
+        calculate_stats(reconciliation_df['Expected Weight Slab (kg)'], 'Expected Weight Slab (kg)'),
+        calculate_stats(reconciliation_df['Charged Weight'], 'Charged Weight (kg) [Courier]'),
+        calculate_stats(reconciliation_df['Weight Difference (kg)'], 'Weight Difference (kg) [Charged - Actual]'),
+        calculate_stats(reconciliation_df['Expected Charge (Rs.)'], 'Expected Charge (Rs.) [Contractual]'),
+        calculate_stats(reconciliation_df['Billing Amount (Rs.)'], 'Billing Amount (Rs.) [Invoiced]'),
+        calculate_stats(reconciliation_df['Difference (Rs.)'], 'Difference (Rs.) [Expected - Billed]'),
+        calculate_stats(reconciliation_df[reconciliation_df['Charge Status'] == 'Overcharged']['Overcharge Amount (Rs.)'], 'Overcharge Amount (Rs.) [Overcharged Orders]')
+    ]
+    stats_df = pd.DataFrame(stats_list)
+    stats_df.to_excel('Descriptive_Statistics.xlsx', index=False)
+    print("=" * 110)
+    print("DESCRIPTIVE STATISTICS SUMMARY TABLE")
+    print("=" * 110)
+    print(stats_df.to_string(index=False))
+    print("=" * 110)
+    
+    # 10. Visualizations
     print("Generating visualizations...")
     summary_counts = final_df['Charge Status'].value_counts()
     
@@ -138,7 +179,8 @@ def main():
     plt.tight_layout()
     plt.savefig('Reconciliation_Summary.png')
     
-    print("Reconciliation complete. Files saved: Reconciliation_Report.xlsx, Reconciliation_Summary.png")
+    print("\nReconciliation complete.")
+    print("Files saved: Reconciliation_Report.xlsx, Descriptive_Statistics.xlsx, Reconciliation_Summary.png")
 
 if __name__ == '__main__':
     main()
