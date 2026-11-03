@@ -20,7 +20,7 @@ This project delivers an automated **Business Data Management (BDM)** pipeline d
 
 ## 2. Proof of Originality & Project Deliverables
 
-- **Public Benchmark Dataset:** [Kaggle B2B Courier Charges Accuracy Benchmark]((https://www.kaggle.com/datasets/purvanahar/b2b-ecommerce-courier-dataset))
+- **Public Benchmark Dataset:** [Kaggle B2B Courier Charges Accuracy Benchmark](https://www.kaggle.com/datasets/purvanahar/b2b-ecommerce-courier-dataset)
 - **Interactive Jupyter Analysis Notebook:** [`courier_invoice_reconciliation.ipynb`](courier_invoice_reconciliation.ipynb) ([GitHub Direct Link](https://github.com/madhavdasm/BDM-Courier-Invoice-Reconciliation/blob/main/courier_invoice_reconciliation.ipynb))
 - **Comprehensive Capstone Project Report:**
   - Markdown Report: [`BDM_Courier_Invoice_Reconciliation_Report.md`](BDM_Courier_Invoice_Reconciliation_Report.md)
